@@ -1,0 +1,30 @@
+{
+  "name": "wait4wallet",
+  "author": "Yug Damon",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "The purpose of this project is to provide a tool to the crypto enthusiats who want to delay the access to their crypto wallet.",
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "bin": {
+    "wait4wallet": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "mocha ./specs --timeout 10000"
+  },
+  "dependencies": {
+    "bip32": "^4.0.0",
+    "bip39": "^3.1.0",
+    "bip85": "^0.0.3",
+    "bs58check": "^3.0.1",
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0",
+    "humanize-duration": "^3.32.0",
+    "parse-duration": "^1.1.0",
+    "tiny-secp256k1": "^2.2.3"
+  },
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "mocha": "^10.4.0"
+  }
+}
